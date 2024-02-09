@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  background: linear-gradient(150deg, dodgerblue, white);
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.card-title {
+  font-size: small;
+  font-weight: 1000;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.card-header {
+  text-align: center;
+}
+
+ul li {
+  border: none !important;
+}
+
+@media screen and (max-width:320px) {
+  ul li{
+    font-size: .9rem;
+  }
+}
+
+.card {
+  border-radius: 20px;
+  animation: blink 1s infinite alternate;
+  box-shadow: 10px 10px 10px black !important;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px black !important;
+  box-shadow: 0px 0px 50px black !important;
+  box-shadow: 0px 0px 80px black !important;
+}
+
+.btn {
+  margin-bottom: 20px !important;
+  border-radius: 50px;
+  padding: 0.6em 5em;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 20px dodgerblue !important;
+  box-shadow: 0px 10px 30px dodgerblue !important;
+  box-shadow: 0px 0px 20px dodgerblue !important;
+}
